@@ -33,18 +33,6 @@ print(f'The standard deviation equals {result:.10f}')
  
     
 
-    """
-    Compute standard deviation of x using loops.
-
-    Parameters
-    ----------
-    x: Sequence of numbers
-
-    Returns
-    -------
-    sd : float
-        Standard deviation of the list of numbers.
-    """
 
 def std_builtin(x):
     """
