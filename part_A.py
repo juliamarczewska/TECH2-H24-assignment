@@ -8,17 +8,25 @@ def std_loops(x):
 
     number = len(x)
 
-    mean = sum(x) / number  
+    total_sum = 0
     
-    vsum = sum((value - mean) ** 2 for value in x)  
+    for value in x:
+        total_sum += value
+    mean = total_sum / number
+
+   
+    vsum = 0
+    for value in x:
+        vsum += (value - mean) ** 2
     
-    variance = vsum / number   
+    variance = vsum / number
     standard_deviation = variance ** 0.5
     
     return standard_deviation
 
 result = std_loops([1, 2, 3, 4, 5])
-print(f'The standard deviation equals: {result:.10f}')        
+print(f'The standard deviation equals: {result:.10f}')
+
 
 
 
