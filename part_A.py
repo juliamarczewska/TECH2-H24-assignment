@@ -6,15 +6,13 @@ Write the implementation of part A of the exercise below.
 
 def std_loops(x):
 
-        x = [1, 2, 3, 4, 5]
-
-    number = len(x)
+        number = len(x)
     mean = 0
 
-    
+   
     for value in x:
         mean += value
-    mean /= n
+    mean /= number  
 
     vsum = 0
     
@@ -27,9 +25,9 @@ def std_loops(x):
     
     return standard_deviation
 
-
 result = std_loops([1, 2, 3, 4, 5])
 print(f'The standard deviation equals: {result:.10f}') 
+       
  
     
 import math
