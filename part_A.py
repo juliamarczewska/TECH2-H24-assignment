@@ -6,27 +6,22 @@ Write the implementation of part A of the exercise below.
 
 def std_loops(x):
 
-        number = len(x)
-    mean = 0
+    number = len(x)
 
-   
-    for value in x:
-        mean += value
-    mean /= number  
-
-    vsum = 0
+    mean = sum(x) / number  
     
+    vsum = sum((value - mean) ** 2 for value in x)  
     
-    for value in x:
-        vsum += (value - mean) ** 2
-        
-    variance = vsum / number
+    variance = vsum / number   
     standard_deviation = variance ** 0.5
     
     return standard_deviation
 
 result = std_loops([1, 2, 3, 4, 5])
-print(f'The standard deviation equals: {result:.10f}') 
+print(f'The standard deviation equals: {result:.10f}')        
+
+
+
        
  
     
