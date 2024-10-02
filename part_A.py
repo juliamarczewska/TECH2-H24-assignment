@@ -29,23 +29,24 @@ def std_loops(x):
 
 
 result = std_loops([1, 2, 3, 4, 5])
-print(f'The standard deviation equals {result:.10f}') 
+print(f'The standard deviation equals: {result:.10f}') 
  
     
 
-
+import math
 def std_builtin(x):
-    """
-    Compute standard deviation of x using the built-in functions sum()
-    and len().
 
-    Parameters
-    ----------
-    x: Sequence of numbers
+        x = [1, 2, 3, 4, 5]
+        mean = sum(x) / len(x)
+        variance = sum((xi - mean) ** 2 for xi in x) / len(x) 
 
-    Returns
-    -------
-    sd : float
-        Standard deviation of the list of numbers.
-    """
+        standart_deviation = math.sqrt(variance)
+
+        return standart_deviation
+        
+result = std_builtin([1, 2, 3, 4, 5])
+print(f'The standard deviation equals: {result:.10f}') 
+        
+        
+     
     
