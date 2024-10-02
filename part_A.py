@@ -8,7 +8,7 @@ def std_loops(x):
 
         x = [1, 2, 3, 4, 5]
 
-    n = len(x)
+    number = len(x)
     mean = 0
 
     
@@ -22,7 +22,7 @@ def std_loops(x):
     for value in x:
         vsum += (value - mean) ** 2
         
-    variance = vsum / n
+    variance = vsum / number
     standard_deviation = variance ** 0.5
     
     return standard_deviation
