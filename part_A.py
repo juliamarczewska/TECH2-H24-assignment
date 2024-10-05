@@ -4,7 +4,7 @@ TECH2 mandatory assignment - Part A
 Write the implementation of part A of the exercise below.
 """
 
-#using loops function to compute it
+#using loops function 
 def std_loops(x):
 
     number = len(x)
@@ -26,7 +26,7 @@ def std_loops(x):
 
 result_loops = std_loops([1, 2, 3, 4, 5])
 
-#using builtin function to compute it
+#using builtin function 
     
 import math
 from math import sqrt
@@ -42,7 +42,7 @@ def std_builtin(x):
         
 result_builtin = std_builtin([1, 2, 3, 4, 5])
 
-#using std() from numpy to compute it
+#using std() from numpy 
 
 import numpy as np
 
@@ -51,7 +51,7 @@ x = np.array([1, 2, 3, 4, 5])
 result_numpy = np.std(x)
   
 
-#checking if loops, builtin functions and std() from numpy calculate the same result
+#checking if loops, builtin functions, and std() from numpy calculate the same result
 
 x = [1, 2, 3, 4, 5]
 
